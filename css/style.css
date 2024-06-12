@@ -13,16 +13,12 @@ reset
  general 
 */
 
-/*
-header  
-*/
-
-.background-container {
-    background-color: #ff6900;
-    width: 100%;
+.column-1-3 {
+    width: calc(100% / 3 - 20px);
+    
 }
 
-.container-header {
+.container {
     width: 1200px;
     min-height: 50px;
     border: 2px solid black;
@@ -31,6 +27,16 @@ header
     justify-content: space-between;
     align-items: center;
 }
+
+/*
+header  
+*/
+
+.background-container-header {
+    background-color: #ff6900;
+    width: 100%;
+}
+
 
 .categoria {
     color: white;
@@ -49,6 +55,45 @@ header
 main  
 */
 
+.container-main {
+    width: 1200px;
+    margin: 30px auto 0;
+    
+}
+
+.my-row {
+    flex-wrap: wrap;
+    display: flex;
+    margin-bottom: 50px;
+    
+}
+
+.card {
+    min-height: 500px;
+    border: 2px solid black;
+    background-color: aqua;
+    margin-bottom: 100px;
+}
+
+.column-1-3:nth-child(3n+2) {
+    margin: 0 20px;
+
+}
+
+
 /* 
 footer  
 */
+
+.background-container-footer {
+    background-color: #1a1a1a;
+    width: 100%;
+}
+
+.informazioni {
+    color: white;
+}
+
+.privacy {
+    color: white;
+}
